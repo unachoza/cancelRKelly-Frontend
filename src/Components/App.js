@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "../App.css";
 import Spotify from "spotify-web-api-js";
 import PlaylistList from "./PlaylistsList";
-import Introduction from "./Introduction";
 import Login from './Login'
 import UsageStats from "./UsageStats";
 import HowItWorks from "./HowItWorks";
