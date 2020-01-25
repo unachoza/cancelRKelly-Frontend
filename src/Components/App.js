@@ -66,7 +66,7 @@ class App extends Component {
   addUser = () => {
     const time = new Date().toString();
     const { display_name, email, country } = this.state;
-    axios.post("postgresql-closed-20170/db/users", {
+    axios.post("https://spotify-cancel.herokuapp.com/postgresql-closed-20170/db/users", {
       display_name,
       email,
       country,
