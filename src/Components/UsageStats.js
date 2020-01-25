@@ -16,12 +16,12 @@ class UsageStats extends Component {
   }
 
   userCounter = async () => {
-    const res = await axios.get('https://spotify-cancel.herokuapp.com/postgresql-closed-20170/db/users/unique');
+    const res = await axios.get('https://spot-server.herokuapp.com/db/users/unique');
     this.setState({ userCount: res.data.data[0].count });
   };
 
   songsRemovedCounter = async () => {
-    const res = await axios.get('https://spotify-cancel.herokuapp.com/postgresql-closed-20170/db/deletedsongs');
+    const res = await axios.get('https://spot-server.herokuapp.com/db/deletedsongs');
     this.setState({ deletedSongsCount: res.data.data[0].count });
   };
   render() {
