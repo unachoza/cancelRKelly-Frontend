@@ -342,6 +342,28 @@ a:active {
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+    .nav-list {
+      line-height: 120%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 2px;
+      padding: 0;
+      margin-left: 22px;
+    }
+    .paragraph{
+      flex-wrap: wrap;
+      height: 100px;
+      width: 90%;
+    }
+    .usage {
+      display: flex;
+      width: 300px;
+      flex-direction: column;
+    }
+    .profile-container{
+      display: flex;
+      flex-direction: column
+    }
 
 }
 
