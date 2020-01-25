@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Home = () => (
-  <div>
+  <div className="title-container">
     <div className="title" style={{ margin: '20px' }}>
       <h1>Cancel R. Kelly</h1>
-      <p className="paragraph">
+      <p className="sub-title">
         This app effortlessly removes R Kelly from our lives. Listening to his music is problematic #BelieveWomen
       </p>
     </div>

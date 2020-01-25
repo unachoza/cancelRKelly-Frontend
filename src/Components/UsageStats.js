@@ -30,7 +30,7 @@ class UsageStats extends Component {
       <div style={{ display: 'flex', marginTop: 60 }}>
         <p className="usage">
           {userCount} People have used this App
-          <span style={{ marginLeft: '35px' }}>{deletedSongsCount} Songs have been removed</span>
+          <span  >{deletedSongsCount} Songs have been removed</span>
         </p>
       </div>
     );
