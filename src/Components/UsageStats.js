@@ -16,12 +16,12 @@ this.songsRemovedCounter()
 }
 
    userCounter = async ()=> {
-           const res = await axios.get('http://localhost:3001/db/users/unique')
+           const res = await axios.get('postgresql-closed-20170/db/users/unique')
             this.setState({userCount: res.data.data[0].count})
     }
 
     songsRemovedCounter = async () => {
-      const res = await axios.get('http://localhost:3001/db/deletedsongs')
+      const res = await axios.get('postgresql-closed-20170/db/deletedsongs')
             this.setState({deletedSongsCount: res.data.data[0].count})
 
     }

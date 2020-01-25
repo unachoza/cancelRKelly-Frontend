@@ -7,7 +7,7 @@ const AboutMe = () =>(
             <div className="bio" >
             <p >
                Built by <span style={{fontSize: "26px"}}> Arianna Choza,</span> <br></br>
-               a FullStack Engineer driven to design a world that promotes equality, creating products that re-image existing conditions, pushing the future forward by building products that inform users of their potential and empower them to realize it.
+               a Frontend Engineer driven to design a world that promotes equality, creating products that re-image existing conditions, pushing the future forward by building products that inform users of their potential and empower them to realize it.
             </p>
                 <a href="www.linkedIn.com/in/arianna-choza" target="_blank">Find me on LinkedIn</a>
                 <a href="www.arianna-choza.surge.sh" target="_blank">Other Projects</a>
