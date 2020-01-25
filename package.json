@@ -5,7 +5,11 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "history": "^4.10.1",
+    "morgan": "^1.9.1",
+    "pg-promise": "^10.3.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-responsive-carousel": "^3.1.51",
@@ -14,13 +18,15 @@
     "spotify-web-api-js": "^1.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start \"npm run server\"",
     "dev": "react-scripts start",
     "later": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "server": "node server.js",
+    "heroku-postbuild": "npm run build",
+    "db": "psql -f db/schema.sql && psql -f db/seed.sql"
   },
   "eslintConfig": {
     "extends": "react-app"
